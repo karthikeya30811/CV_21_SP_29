@@ -1,0 +1,146 @@
+/* General reset and container styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  /* Scoped to landing-page class */
+  .landing-page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Hero Section */
+  .landing-page .hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .landing-page .hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .landing-page .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .landing-page .hero .btn {
+    padding: 1rem 2rem;
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .landing-page .hero .btn:hover {
+    background-color: #21a1f1;
+  }
+  
+  /* Features Section */
+  .landing-page .features {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0;
+  }
+  
+  .landing-page .feature {
+    flex: 1;
+    margin: 0 1rem;
+    text-align: center;
+  }
+  
+  .landing-page .feature img {
+    max-width: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .landing-page .feature h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .landing-page .feature p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Call to Action Section */
+  .landing-page .cta {
+    background-color: #282c34;
+    color: white;
+    padding: 3rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  
+  .landing-page .cta h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .landing-page .cta .btn {
+    padding: 1rem 2rem;
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .landing-page .cta .btn:hover {
+    background-color: #21a1f1;
+  }
+  
+  /* Footer */
+  .landing-page footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .landing-page footer p {
+    margin-bottom: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .landing-page .features {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .landing-page .feature {
+      margin-bottom: 2rem;
+    }
+  
+    .landing-page .hero h1 {
+      font-size: 3rem;
+    }
+  
+    .landing-page .hero p {
+      font-size: 1.2rem;
+    }
+  
+    .landing-page .cta h2 {
+      font-size: 2rem;
+    }
+  }
+  
